@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Projects</title>
+<meta name="description" content="25 AI-powered web apps: each pairs a real local engine with LLM features. Free to use, no install.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+  :root { --accent: #5b5bd6; }
+  .hero { max-width: 1200px; margin: 0 auto; padding: 48px 24px 8px; }
+  .hero h1 { font-size: clamp(30px, 5vw, 48px); font-weight: 800; letter-spacing: -.03em; margin: 0 0 10px; }
+  .hero p { color: var(--muted); font-size: 17px; max-width: 720px; }
+  .grid-p { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .proj { display: flex; flex-direction: column; gap: 8px; transition: transform .12s, border-color .15s; }
+  .proj:hover { transform: translateY(-3px); border-color: var(--accent); }
+  .proj h2 { font-size: 18px; margin: 0; }
+  .proj p { color: var(--muted); font-size: 14px; flex: 1; margin: 0; }
+  .emoji { font-size: 30px; }
+  .num { font: 600 12px var(--mono); color: var(--muted); }
+  .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .links { margin-top: 6px; }
+  .search { max-width: 380px; }
+</style>
+</head>
+<body>
+<section class="hero">
+  <h1>🧰 25 AI projects</h1>
+  <p>Each app pairs a real local engine (SQLite in WebAssembly, a d20 game engine, a Web Audio synth, a crossword constructor, OKLCH color math, Elo ratings…) with LLM features. Everything runs in your browser: open one and try it in demo mode, or paste a free <a href="https://console.groq.com/keys">Groq</a> key for live AI. One key works across all of them.</p>
+  <input class="input search" id="q" placeholder="Filter, e.g. SQL, audio, map, graph…" aria-label="Filter projects">
+</section>
+<main>
+  <div class="grid-p" id="grid">
+    <article class="card proj" data-q="debate arena two ai personas debate any motion in parliamentary format while an ai adjudicator scores the clash. streaming sse parsing hand-rolled svg radar chart flesch reading-ease with heuristic syllable counter">
+      <div class="row between"><span class="emoji">⚖️</span><span class="num">#01</span></div>
+      <h2>Debate Arena</h2>
+      <p>Two AI personas debate any motion in parliamentary format while an AI adjudicator scores the clash.</p>
+      <div class="tags"><span class="tag">Streaming SSE parsing</span><span class="tag">Hand-rolled SVG radar chart</span><span class="tag">Flesch reading-ease with heuristic</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/debate-arena/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/debate-arena">Source</a></div>
+    </article>
+    <article class="card proj" data-q="mindmap forge grow an endless, ai-expanded mind map from any topic, with radial layout, pan/zoom and export. svg rendering with no chart library computed-style inlining for standalone svg/png export pointer events pan + cursor-anchored wheel zoom">
+      <div class="row between"><span class="emoji">🧠</span><span class="num">#02</span></div>
+      <h2>Mindmap Forge</h2>
+      <p>Grow an endless, AI-expanded mind map from any topic, with radial layout, pan/zoom and export.</p>
+      <div class="tags"><span class="tag">SVG rendering with no chart librar</span><span class="tag">Computed-style inlining for standa</span><span class="tag">Pointer Events pan + cursor-anchor</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/mindmap-forge/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/mindmap-forge">Source</a></div>
+    </article>
+    <article class="card proj" data-q="sql copilot ask questions about data in plain english. a real sqlite engine runs in your browser while ai writes, repairs and explains the sql. sql.js (sqlite wasm) from cdnjs hand-rolled svg charts mulberry32 seeded prng for reproducible data">
+      <div class="row between"><span class="emoji">🗄️</span><span class="num">#03</span></div>
+      <h2>SQL Copilot</h2>
+      <p>Ask questions about data in plain English. A real SQLite engine runs in your browser while AI writes, repairs and explains the SQL.</p>
+      <div class="tags"><span class="tag">sql.js</span><span class="tag">Hand-rolled SVG charts</span><span class="tag">mulberry32 seeded PRNG for reprodu</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/sql-copilot/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/sql-copilot">Source</a></div>
+    </article>
+    <article class="card proj" data-q="flashforge paste your notes and get ai-written flashcards, then study them with sm-2 spaced repetition. sm-2 algorithm implementation css 3d transforms for card flips svg forecast chart">
+      <div class="row between"><span class="emoji">🃏</span><span class="num">#04</span></div>
+      <h2>FlashForge</h2>
+      <p>Paste your notes and get AI-written flashcards, then study them with SM-2 spaced repetition.</p>
+      <div class="tags"><span class="tag">SM-2 algorithm implementation</span><span class="tag">CSS 3D transforms for card flips</span><span class="tag">SVG forecast chart</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/flashforge/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/flashforge">Source</a></div>
+    </article>
+    <article class="card proj" data-q="resume match ats-style keyword coverage, bullet-quality linting and ai rewrites that tailor your resume to a specific job. rule-based nlp: stopwords, stemming, synonym map, n-grams pdf.js (es module, cdn worker) svg gauge">
+      <div class="row between"><span class="emoji">🎯</span><span class="num">#05</span></div>
+      <h2>Resume Match</h2>
+      <p>ATS-style keyword coverage, bullet-quality linting and AI rewrites that tailor your resume to a specific job.</p>
+      <div class="tags"><span class="tag">Rule-based NLP: stopwords, stemmin</span><span class="tag">pdf.js</span><span class="tag">SVG gauge</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/resume-match/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/resume-match">Source</a></div>
+    </article>
+    <article class="card proj" data-q="dungeon narrator a roguelike where a real game engine owns the rules and an ai dungeon master narrates every moment. seeded mulberry32 rng for reproducible worlds engine/narrator separation pattern for trustworthy llm games svg minimap with fog of war">
+      <div class="row between"><span class="emoji">🐉</span><span class="num">#06</span></div>
+      <h2>Dungeon Narrator</h2>
+      <p>A roguelike where a real game engine owns the rules and an AI Dungeon Master narrates every moment.</p>
+      <div class="tags"><span class="tag">Seeded mulberry32 RNG for reproduc</span><span class="tag">Engine/narrator separation pattern</span><span class="tag">SVG minimap with fog of war</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/dungeon-narrator/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/dungeon-narrator">Source</a></div>
+    </article>
+    <article class="card proj" data-q="code atlas paste javascript and get a live call graph, complexity metrics, and ai explanations, refactors and unit tests. acorn parser + tokenizer (cdnjs) custom ast walker, mccabe complexity, halstead metrics, maintainability index force-directed graph layout from scratch">
+      <div class="row between"><span class="emoji">🗺️</span><span class="num">#07</span></div>
+      <h2>Code Atlas</h2>
+      <p>Paste JavaScript and get a live call graph, complexity metrics, and AI explanations, refactors and unit tests.</p>
+      <div class="tags"><span class="tag">acorn parser + tokenizer</span><span class="tag">Custom AST walker, McCabe complexi</span><span class="tag">Force-directed graph layout from s</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/code-atlas/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/code-atlas">Source</a></div>
+    </article>
+    <article class="card proj" data-q="budget brain drop in a bank csv to auto-categorize spending, catch subscriptions and anomalies, and get ai budgeting insights, all privately in your browser. robust statistics (median absolute deviation) hand-built svg stacked bar + donut charts seeded synthetic bank data generator">
+      <div class="row between"><span class="emoji">💸</span><span class="num">#08</span></div>
+      <h2>Budget Brain</h2>
+      <p>Drop in a bank CSV to auto-categorize spending, catch subscriptions and anomalies, and get AI budgeting insights, all privately in your browser.</p>
+      <div class="tags"><span class="tag">Robust statistics</span><span class="tag">Hand-built SVG stacked bar + donut</span><span class="tag">Seeded synthetic bank data generat</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/budget-brain/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/budget-brain">Source</a></div>
+    </article>
+    <article class="card proj" data-q="pantry chef track what&#x27;s in your kitchen, get ai recipes that use up what&#x27;s expiring, then scale, convert, shop and cook with built-in timers. unit-conversion engine with fraction rendering web audio api alarm localstorage persistence">
+      <div class="row between"><span class="emoji">🍳</span><span class="num">#09</span></div>
+      <h2>Pantry Chef</h2>
+      <p>Track what&#x27;s in your kitchen, get AI recipes that use up what&#x27;s expiring, then scale, convert, shop and cook with built-in timers.</p>
+      <div class="tags"><span class="tag">Unit-conversion engine with fracti</span><span class="tag">Web Audio API alarm</span><span class="tag">localStorage persistence</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/pantry-chef/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/pantry-chef">Source</a></div>
+    </article>
+    <article class="card proj" data-q="mood synth describe a mood and ai composes chords and a melody. a hand-built web audio synth plays it, with a live piano roll and midi export. web audio api (oscillators, biquads, convolver, dynamics compressor) binary midi file writer with variable-length quantities canvas 2d piano roll">
+      <div class="row between"><span class="emoji">🎹</span><span class="num">#10</span></div>
+      <h2>Mood Synth</h2>
+      <p>Describe a mood and AI composes chords and a melody. A hand-built Web Audio synth plays it, with a live piano roll and MIDI export.</p>
+      <div class="tags"><span class="tag">Web Audio API</span><span class="tag">Binary MIDI file writer with varia</span><span class="tag">Canvas 2D piano roll</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/mood-synth/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/mood-synth">Source</a></div>
+    </article>
+    <article class="card proj" data-q="exam planner ai breaks your syllabus into topics; a spaced-repetition scheduler turns them into a realistic study calendar you can export to google or apple calendar. priority-based constraint scheduler rfc 5545 icalendar writer utc-safe date math">
+      <div class="row between"><span class="emoji">📅</span><span class="num">#11</span></div>
+      <h2>Exam Planner</h2>
+      <p>AI breaks your syllabus into topics; a spaced-repetition scheduler turns them into a realistic study calendar you can export to Google or Apple Calendar.</p>
+      <div class="tags"><span class="tag">Priority-based constraint schedule</span><span class="tag">RFC 5545 iCalendar writer</span><span class="tag">UTC-safe date math</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/exam-planner/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/exam-planner">Source</a></div>
+    </article>
+    <article class="card proj" data-q="phish scope paste a suspicious email and get local forensics (headers, links, lookalike domains, pressure language) plus an ai second opinion. registrable-domain heuristics (etld+1 approximation) levenshtein edit distance + homoglyph folding regex-based nlp lexicons">
+      <div class="row between"><span class="emoji">🎣</span><span class="num">#12</span></div>
+      <h2>Phish Scope</h2>
+      <p>Paste a suspicious email and get local forensics (headers, links, lookalike domains, pressure language) plus an AI second opinion.</p>
+      <div class="tags"><span class="tag">Registrable-domain heuristics</span><span class="tag">Levenshtein edit distance + homogl</span><span class="tag">Regex-based NLP lexicons</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/phish-scope/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/phish-scope">Source</a></div>
+    </article>
+    <article class="card proj" data-q="commit crafter paste a git diff to get a conventional commit message, a pr description and an ai code review, plus a linter for the message itself. unified diff format parser unicode property escapes for emoji-aware linting prompt budgeting for large diffs">
+      <div class="row between"><span class="emoji">📝</span><span class="num">#13</span></div>
+      <h2>Commit Crafter</h2>
+      <p>Paste a git diff to get a Conventional Commit message, a PR description and an AI code review, plus a linter for the message itself.</p>
+      <div class="tags"><span class="tag">Unified diff format parser</span><span class="tag">Unicode property escapes for emoji</span><span class="tag">Prompt budgeting for large diffs</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/commit-crafter/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/commit-crafter">Source</a></div>
+    </article>
+    <article class="card proj" data-q="step check a math tutor that checks every line of your work, pinpoints the first wrong step, names the misconception and coaches with socratic hints. math.js expression parser/compiler katex rendering numerical analysis: bisection, ternary search, randomized identity testing">
+      <div class="row between"><span class="emoji">➗</span><span class="num">#14</span></div>
+      <h2>Step Check</h2>
+      <p>A math tutor that checks every line of your work, pinpoints the first wrong step, names the misconception and coaches with Socratic hints.</p>
+      <div class="tags"><span class="tag">math.js expression parser/compiler</span><span class="tag">KaTeX rendering</span><span class="tag">Numerical analysis: bisection, ter</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/step-check/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/step-check">Source</a></div>
+    </article>
+    <article class="card proj" data-q="lang lens learn a language by reading: tap any word for a context-aware ai gloss, track known words, generate graded stories, quiz yourself and listen with text-to-speech. intl.segmenter web speech api (speechsynthesis) per-language localstorage vocab stores">
+      <div class="row between"><span class="emoji">🔎</span><span class="num">#15</span></div>
+      <h2>Lang Lens</h2>
+      <p>Learn a language by reading: tap any word for a context-aware AI gloss, track known words, generate graded stories, quiz yourself and listen with text-to-speech.</p>
+      <div class="tags"><span class="tag">Intl.Segmenter</span><span class="tag">Web Speech API</span><span class="tag">Per-language localStorage vocab st</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/lang-lens/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/lang-lens">Source</a></div>
+    </article>
+    <article class="card proj" data-q="mock forge describe an api in plain english and get a schema, realistic relational fake data, a working in-browser rest simulator, and typescript/openapi exports. topological sort for relational data generation url/query parsing with an operator mini-language openapi 3 + json schema generators">
+      <div class="row between"><span class="emoji">🧪</span><span class="num">#16</span></div>
+      <h2>Mock Forge</h2>
+      <p>Describe an API in plain English and get a schema, realistic relational fake data, a working in-browser REST simulator, and TypeScript/OpenAPI exports.</p>
+      <div class="tags"><span class="tag">Topological sort for relational da</span><span class="tag">URL/query parsing with an operator</span><span class="tag">OpenAPI 3 + JSON Schema generators</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/mock-forge/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/mock-forge">Source</a></div>
+    </article>
+    <article class="card proj" data-q="trivia elo adaptive ai trivia where questions and players both carry elo ratings, so every question lands at the edge of what you know. elo rating system (k-factor schedule, expected-score model) self-calibrating item difficulty svg sparkline">
+      <div class="row between"><span class="emoji">🏆</span><span class="num">#17</span></div>
+      <h2>Trivia Elo</h2>
+      <p>Adaptive AI trivia where questions and players both carry Elo ratings, so every question lands at the edge of what you know.</p>
+      <div class="tags"><span class="tag">Elo rating system</span><span class="tag">Self-calibrating item difficulty</span><span class="tag">SVG sparkline</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/trivia-elo/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/trivia-elo">Source</a></div>
+    </article>
+    <article class="card proj" data-q="minutes miner turn a meeting transcript into minutes, decisions and owned action items, plus speaker analytics: talk time, interruptions, balance and a timeline. webvtt/srt parsing gini coefficient for participation balance overlap/trailing-dash interruption heuristics">
+      <div class="row between"><span class="emoji">⛏️</span><span class="num">#18</span></div>
+      <h2>Minutes Miner</h2>
+      <p>Turn a meeting transcript into minutes, decisions and owned action items, plus speaker analytics: talk time, interruptions, balance and a timeline.</p>
+      <div class="tags"><span class="tag">WebVTT/SRT parsing</span><span class="tag">Gini coefficient for participation</span><span class="tag">Overlap/trailing-dash interruption</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/minutes-miner/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/minutes-miner">Source</a></div>
+    </article>
+    <article class="card proj" data-q="story weaver co-write branching interactive fiction with ai: a live story graph, continuity checks, play mode and twine export. graph algorithms: bfs layering, dfs longest path, reachability svg graph rendering with pan/zoom twee 3 interchange format">
+      <div class="row between"><span class="emoji">🕸️</span><span class="num">#19</span></div>
+      <h2>Story Weaver</h2>
+      <p>Co-write branching interactive fiction with AI: a live story graph, continuity checks, play mode and Twine export.</p>
+      <div class="tags"><span class="tag">Graph algorithms: BFS layering, DF</span><span class="tag">SVG graph rendering with pan/zoom</span><span class="tag">Twee 3 interchange format</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/story-weaver/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/story-weaver">Source</a></div>
+    </article>
+    <article class="card proj" data-q="palette lab ai color palettes from a mood or brand, checked with real color science: oklch tonal scales, a wcag contrast matrix, auto-fix, color-blindness simulation and a live ui preview. oklab / oklch color space wcag 2.x relative luminance machado et al. (2009) cvd matrices">
+      <div class="row between"><span class="emoji">🎨</span><span class="num">#20</span></div>
+      <h2>Palette Lab</h2>
+      <p>AI color palettes from a mood or brand, checked with real color science: OKLCH tonal scales, a WCAG contrast matrix, auto-fix, color-blindness simulation and a live UI preview.</p>
+      <div class="tags"><span class="tag">OKLab / OKLCH color space</span><span class="tag">WCAG 2.x relative luminance</span><span class="tag">Machado et al.</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/palette-lab/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/palette-lab">Source</a></div>
+    </article>
+    <article class="card proj" data-q="crossword ai pick any theme: ai writes the words and clues, a backtracking-style constructor builds the grid, and you solve it in the browser. constraint-based crossword construction heuristic seeded rng for reproducible layouts css grid board + print media queries">
+      <div class="row between"><span class="emoji">✏️</span><span class="num">#21</span></div>
+      <h2>Crossword AI</h2>
+      <p>Pick any theme: AI writes the words and clues, a backtracking-style constructor builds the grid, and you solve it in the browser.</p>
+      <div class="tags"><span class="tag">Constraint-based crossword constru</span><span class="tag">Seeded RNG for reproducible layout</span><span class="tag">CSS Grid board + print media queri</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/crossword-ai/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/crossword-ai">Source</a></div>
+    </article>
+    <article class="card proj" data-q="interview sim practice interviews with an adaptive ai interviewer: voice or text answers, follow-up probes, star and filler-word analytics, and a scored report. web speech api (recognition + synthesis) regex-based discourse analysis streaming-free turn-based state machine">
+      <div class="row between"><span class="emoji">🎙️</span><span class="num">#22</span></div>
+      <h2>Interview Sim</h2>
+      <p>Practice interviews with an adaptive AI interviewer: voice or text answers, follow-up probes, STAR and filler-word analytics, and a scored report.</p>
+      <div class="tags"><span class="tag">Web Speech API</span><span class="tag">Regex-based discourse analysis</span><span class="tag">Streaming-free turn-based state ma</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/interview-sim/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/interview-sim">Source</a></div>
+    </article>
+    <article class="card proj" data-q="review radar drop in product reviews to get aspect-level sentiment, trend lines, suspicious-review detection, and an ai executive summary with reply drafts. lexicon-based sentiment analysis fightin&#x27; words log-odds with dirichlet prior w-shingling + jaccard similarity">
+      <div class="row between"><span class="emoji">📡</span><span class="num">#23</span></div>
+      <h2>Review Radar</h2>
+      <p>Drop in product reviews to get aspect-level sentiment, trend lines, suspicious-review detection, and an AI executive summary with reply drafts.</p>
+      <div class="tags"><span class="tag">Lexicon-based sentiment analysis</span><span class="tag">Fightin&#x27; Words log-odds with Diric</span><span class="tag">w-shingling + Jaccard similarity</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/review-radar/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/review-radar">Source</a></div>
+    </article>
+    <article class="card proj" data-q="trip mapper ai travel itineraries on a live map, with route optimization, walking times, a budget breakdown, location fixing and gpx/calendar export. leaflet + openstreetmap tiles haversine distance, 2-opt tsp heuristic gpx 1.1 and rfc 5545 writers">
+      <div class="row between"><span class="emoji">🧭</span><span class="num">#24</span></div>
+      <h2>Trip Mapper</h2>
+      <p>AI travel itineraries on a live map, with route optimization, walking times, a budget breakdown, location fixing and GPX/calendar export.</p>
+      <div class="tags"><span class="tag">Leaflet + OpenStreetMap tiles</span><span class="tag">Haversine distance, 2-opt TSP heur</span><span class="tag">GPX 1.1 and RFC 5545 writers</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/trip-mapper/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/trip-mapper">Source</a></div>
+    </article>
+    <article class="card proj" data-q="legalese lens paste a contract or terms of service to get clause-by-clause risk flags, readability scores, plain-english rewrites and q&amp;a with citations. regex risk-pattern library flesch-kincaid grade with heuristic syllables tf-idf + cosine similarity retrieval">
+      <div class="row between"><span class="emoji">📜</span><span class="num">#25</span></div>
+      <h2>Legalese Lens</h2>
+      <p>Paste a contract or Terms of Service to get clause-by-clause risk flags, readability scores, plain-English rewrites and Q&amp;A with citations.</p>
+      <div class="tags"><span class="tag">Regex risk-pattern library</span><span class="tag">Flesch-Kincaid grade with heuristi</span><span class="tag">TF-IDF + cosine similarity retriev</span></div>
+      <div class="row links"><a class="btn primary sm" href="https://dguywhoknows.github.io/legalese-lens/">Live demo ↗</a><a class="btn ghost sm" href="https://github.com/dguywhoknows/legalese-lens">Source</a></div>
+    </article>
+  </div>
+</main>
+<footer class="foot">Built by <a href="https://github.com/dguywhoknows">@dguywhoknows</a> · vanilla JS · GitHub Pages · MIT</footer>
+<script>
+  const q = document.getElementById('q');
+  q.addEventListener('input', () => { const t = q.value.toLowerCase().trim(); document.querySelectorAll('.proj').forEach((c) => { c.style.display = !t || c.dataset.q.includes(t) ? '' : 'none'; }); });
+</script>
+</body>
+</html>
